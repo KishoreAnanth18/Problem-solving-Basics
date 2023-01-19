@@ -1,2 +1,6 @@
 # Problem-solving-Basics
-Basic problems solved
+Basic problem soliving
+- I/O 
+- Conditional Statements
+- Loops
+- Functions
