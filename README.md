@@ -12,3 +12,5 @@
 - 2D Array
 - Structures
 - bitwise
+- Linked List
+- Sorting
