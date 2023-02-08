@@ -81,7 +81,6 @@ class LinkedList:
 
 #Main program			
 if __name__ == "__main__":
-	'''
 	LL = LinkedList() #LL object created for LinkedList class
 	num = list(map(int, input().split()))
 	for it in range(len(num)):
@@ -89,4 +88,4 @@ if __name__ == "__main__":
 	LL.deleteEnd()
 	LL.display()
 	#print(LL.__doc__) #to print the docstring
-	'''
+	

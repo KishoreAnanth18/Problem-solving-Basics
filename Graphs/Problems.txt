@@ -1,0 +1,10 @@
+Graph problems to do:
+
+0. Implement DFS using recursion
+
+1. Track parent node in DFS
+	- refer BFS code.
+	- append the curr as parent node to prev once popped.
+	
+2. Write a function to detect the cycle in grap
+	- In DFS, on traversing if current node meet a visited node then cycle is formed. 

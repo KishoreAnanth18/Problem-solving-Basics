@@ -1,0 +1,22 @@
+Graphs:
+
+#BFS
+#DFS
+#Djikstra's algorithm
+Floyd warshall
+Minimum spanning tree
+	-prim
+	-kruskal
+Bridges
+Articulation
+cut vertex
+cycle detection - Floyd's cycle finding algo(slow & fast pointers)
+
+
+
+Tree:
+
+#BST & BT
+Least common ancestor
+BT is a Full BT or not?
+mirror image
