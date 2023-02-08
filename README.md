@@ -14,3 +14,6 @@
 - bitwise
 - Linked List
 - Sorting
+- Searching
+- Trees
+- Graphs
