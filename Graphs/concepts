@@ -10,7 +10,6 @@ Minimum spanning tree
 Bridges
 Articulation
 cut vertex
-cycle detection - Floyd's cycle finding algo(slow & fast pointers)
 
 
 
@@ -20,3 +19,8 @@ Tree:
 Least common ancestor
 BT is a Full BT or not?
 mirror image
+
+
+
+Linked List:
+cycle detection - Floyd's cycle finding algo(slow & fast pointers)
