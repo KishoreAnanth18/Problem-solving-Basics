@@ -1,0 +1,57 @@
+--CREATE DATABASE db_name;
+--USE db_name;
+
+CREATE TABLE Course(
+	course_ID int not null,
+	course_name varchar(50),
+	PRIMARY KEY (course_ID)
+);
+
+CREATE TABLE Lecturer(
+	lecturer_ID int not null,
+	lecturer_name varchar(50),
+	course_ID int,
+	PRIMARY KEY(lecturer_ID),
+	FOREIGN KEY(course_ID) REFERENCES Course(course_ID)
+);
+
+CREATE TABLE Subject(
+	subject_ID int not null,
+	subject_name varchar(50),
+	course_ID int,
+	lecturer_ID int,
+	PRIMARY KEY (subject_ID),
+	FOREIGN KEY(course_ID) REFERENCES Course(course_ID),
+	FOREIGN KEY(lecturer_ID) REFERENCES Lecturer(Lecturer_ID)
+);
+
+CREATE TABLE Student(
+	student_ID int not null,
+	student_name varchar(50) not null,
+	--date format(yyyy-mm-dd)
+	DOB date,
+	door int,
+	city varchar(50),
+	street varchar(50),
+	course_ID int,
+	lecturer_ID int,
+	--state,
+	--pincode,
+	PRIMARY KEY(Student_ID),
+	FOREIGN KEY(course_ID) REFERENCES Course(course_ID),
+	FOREIGN KEY(lecturer_ID) REFERENCES Lecturer(Lecturer_ID)
+);
+
+--ALTER TABLE table_name
+--ADD column_name datatype;
+--(Missed to add State, and Pin)
+
+alter table Student add state varchar(50);
+alter table Student add pincode int;
+
+CREATE TABLE Hobby(
+	student_ID int,
+	hobby_name varchar(50),
+	FOREIGN KEY(student_ID) REFERENCES Student(student_ID)
+);
+

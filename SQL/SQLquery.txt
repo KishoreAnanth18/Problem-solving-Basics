@@ -1,0 +1,36 @@
+1. write a query to fetch the studentname from the student table in the uppercase and use the ALIAS name as studentFname
+	query:
+	select upper(student_name) from Student as StudentFname;
+
+
+2. write a query to fetch the number of lecturer working in the department "IT"
+	query:
+	select count(*) from lecturer where course_ID = (Select course_ID from Course where course_name = "IT");
+
+
+3. write a query to get the student whose name starts with s and order in Desc order
+	query:
+	select * from Student where student_name like "s%" order by student_name desc;
+
+
+4. write a query find number of students whose DOB is between 02/05/1970 to 31/12/2025 and are grouped according to lectureId.
+	query:
+	select count(*) as 'Count' ,lecturer_ID from Student where DOB between '1970-05-02' and '2025-12-31' group by lecturer_ID;
+
+
+5. write a query to fetch details of student with the state as "TN".
+	query:
+	select * from student where state = "Tamil Nadu";
+
+
+6. write a query to fetch the details of the lecturer assigned to the students.
+	quert:
+	select student.student_name, lecturer.lecturer_name from Student inner join Lecturer on lecturer.lecturer_ID = student.lecturer_ID;
+	
+	
+7. write a query to calculate the even and odd records from a table
+   query:
+	select count(*) as 'Even Count' from Student where student_id%2=0;
+	select count(*) as 'Odd Count' from Student where student_id%2=1;
+(or)
+	select count(*) from student where mod(student_id,2)= 0;

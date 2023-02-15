@@ -1,0 +1,46 @@
+INSERT INTO Course(course_ID, course_name) values (1,"IT");
+INSERT INTO Course(course_ID, course_name) values (2,"CSE");
+INSERT INTO Course(course_ID, course_name) values (3,"ECE");
+INSERT INTO Course(course_ID, course_name) values (4,"CSBS");
+
+
+INSERT INTO Lecturer(lecturer_ID, lecturer_name, course_ID) values (101, "Jenny", 1);
+INSERT INTO Lecturer(lecturer_ID, lecturer_name, course_ID) values (102, "Navin Reddy", 1);
+INSERT INTO Lecturer(lecturer_ID, lecturer_name, course_ID) values (103, "Mosh", 2);
+INSERT INTO Lecturer(lecturer_ID, lecturer_name, course_ID) values (104, "Joe", 4);
+INSERT INTO Lecturer(lecturer_ID, lecturer_name, course_ID) values (105, "Ana", 3);
+INSERT INTO Lecturer(lecturer_ID, lecturer_name, course_ID) values (106, "Daddario", 2);
+INSERT INTO Lecturer(lecturer_ID, lecturer_name, course_ID) values (107, "LP", 3);
+
+
+INSERT INTO Subject(subject_ID, subject_name, course_ID, lecturer_ID) values (11, "DBMS", 1, 101);
+INSERT INTO Subject(subject_ID, subject_name, course_ID, lecturer_ID) values (31, "LIC", 3, 105);
+INSERT INTO Subject(subject_ID, subject_name, course_ID, lecturer_ID) values (21, "CN", 2, 103);
+INSERT INTO Subject(subject_ID, subject_name, course_ID, lecturer_ID) values (12, "DSA", 1, 102);
+INSERT INTO Subject(subject_ID, subject_name, course_ID, lecturer_ID) values (41, "OS", 4, 104);
+
+
+INSERT INTO Student values(1001,"Kishore","2002-02-18",10,"Theni","Thirumalapuram",1,102,"Tamil Nadu",625513);
+INSERT INTO Student values(1002,"Pradeepa","2000-09-10",18,"Theni","Bodinayakanur",1,101,"Tamil Nadu",625513);
+INSERT INTO Student values(1003,"Tharun","2002-09-10",5,"Hosur","Main Road",2,103,"Tamil Nadu",635109);
+INSERT INTO Student values(1004,"Dhrani","2003-03-03",11,"Cuddalore","Beach street",4,104,"Tamil Nadu",696969);
+INSERT INTO Student values(1005,"Roshan","2003-08-05",17,"Salem","Bakery road",3,105,"Tamil Nadu",626513);
+INSERT INTO Student values(1006,"Mahadeva","2002-11-27",3,"Anthiyur","Riverside",2,106,"Tamil Nadu",627153);
+INSERT INTO Student values(1007,"Sahana","2002-02-18",7,"Coimbatore","Fun Mall",1,101,"Tamil Nadu",624353);
+INSERT INTO Student values(1008,"Jay","2002-06-28",7,"Hosur","Rajiv nagar",3,Null ,"Tamil Nadu",635109);
+INSERT INTO Student values(1009,"Honey","2002-10-09",8,"Nammakal","Nadu road",1,Null,"Tamil Nadu",624312);
+
+
+
+INSERT INTO Hobby(student_ID, hobby_name) values (1001,"Listening to Music");
+INSERT INTO Hobby(student_ID, hobby_name) values (1001,"Pencil Art");
+INSERT INTO Hobby(student_ID, hobby_name) values (1002,"Gaming");
+INSERT INTO Hobby(student_ID, hobby_name) values (1002,"Reading Books");
+INSERT INTO Hobby(student_ID, hobby_name) values (1003,"Listening to Music");
+INSERT INTO Hobby(student_ID, hobby_name) values (1003,"Playing Cricket");
+INSERT INTO Hobby(student_ID, hobby_name) values (1004,"Internet surf");
+INSERT INTO Hobby(student_ID, hobby_name) values (1004,"Dancing");
+INSERT INTO Hobby(student_ID, hobby_name) values (1005,"Listening to Music");
+INSERT INTO Hobby(student_ID, hobby_name) values (1006,"Disturbing others");
+INSERT INTO Hobby(student_ID, hobby_name) values (1006,"Chess");
+

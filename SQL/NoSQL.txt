@@ -1,0 +1,15 @@
+The popularity of NoSQL has been driven by the following reasons:
+
+-The pace of development with NoSQL databases can be much faster than with a SQL database
+-The structure of many different forms of data is more easily handled and evolved with a NoSQL database
+-The amount of data in many applications cannot be served affordably by a SQL database
+-The scale of traffic and need for zero downtime cannot be handled by SQL
+-New application paradigms can be more easily supported
+
+
+Here are the four main types of NoSQL databases:
+
+- Document databases
+- Key-value stores
+- Column-oriented databases
+- Graph databases

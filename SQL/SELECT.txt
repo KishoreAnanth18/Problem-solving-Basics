@@ -1,0 +1,5 @@
+select * from Course;
+select * from Hobby;
+select * from Lecturer;
+select * from Student;
+select * from Subject;
