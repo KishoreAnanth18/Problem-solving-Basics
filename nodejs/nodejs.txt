@@ -96,7 +96,7 @@ if (age==18){
 
 for loop
 --------
-data = [10,true,"kishroe",{name:"pradeepa", roll:139}]
+data = [10,true,"kishore",{name:"pradeepa", roll:139}]
 for(let it=0; it<data.length; it++)
     console.log(data[it]);
 
