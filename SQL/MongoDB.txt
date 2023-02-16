@@ -7,7 +7,6 @@ use ('db_name') - to use the db or to create the db
 database is not created unless contents are available
 
 
-
 --Collection
 
 db.createCollection('collection_name')
