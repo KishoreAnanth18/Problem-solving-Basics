@@ -150,3 +150,51 @@ const express = require('express'); --> to use a package installed,
                                         to use express package we have to first ask(require) and have to store in a const variable.
  
 
+to use our funtion in other file, we have to export it using export keyword.
+refer npm/app.js and npm/color.js file.
+
+
+
+file system
+-----------
+
+fs - file system : default in nodejs just like http.
+
+const fs = require('fs')
+
+// toString() method used to read the data, without toString() method it will return the buffer value.
+fs.readFile(`${__dirname}/pet.txt`,(err, data)=>{
+    if(err){
+        console.log("Error happened");
+        return;
+    }
+    console.log(data.toString());
+})
+
+//writeFile method will create a new file if not already exist.
+//If the file is already available it will replace the contents in it, with the given data.
+fs.writeFile(`${__dirname}/pet1.txt`,'husky',(err)=>{
+    if(err){
+        console.log("Error happened");
+        return;
+    }
+    console.log("Saved data successfully");
+})
+
+//unlink() method used to delete a file. If file not present, it will throw an error.
+fs.unlink(`${__dirname}/pet1.txt`,(err)=>{
+    if(err){
+        console.log("Error occured");
+        return;
+    }
+    console.log("Deleted successfully")
+})
+
+//to rename a file in the directory
+fs.rename(`${__dirname}/pet.txt`,`${__dirname}/pet1.txt`,(err)=>{
+    if(err){
+        console.log("Error occured");
+        return;
+    }
+    console.log("File rename successful");
+})
