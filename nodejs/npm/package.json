@@ -1,0 +1,19 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "demo package for testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "[demo",
+    "test]"
+  ],
+  "author": "Kishore Ananth N",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "superagent": "^8.0.9"
+  }
+}

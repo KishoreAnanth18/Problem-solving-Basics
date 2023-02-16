@@ -11,7 +11,7 @@ switch (arg[0]) {
 		console.log(`Result of ${arg[1]} + ${arg[2]} = ${arg[1] + arg[2]}`);
 		break;
         
-    //use /* in CLI
+    //use \* in CLI
 	case '*':
 		console.log(`Result of ${arg[1]} * ${arg[2]} = ${arg[1] * arg[2]}`);
 		break;

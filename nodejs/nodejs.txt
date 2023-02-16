@@ -101,4 +101,52 @@ for(let it=0; it<data.length; it++)
     console.log(data[it]);
 
 
-    
+--------------------------------------------------------
+//function
+function returnSome(num1,num2){
+    console.log(num1+num2)
+}
+returnSome(10,20)
+
+//industry standard to work with,
+let returnSomething = (num1,num2) => {
+    console.log(num1+num2);
+}
+returnSomething(10,20)
+
+--------------------------------------------------------
+
+process.argv[] --> it will get the CLI inputs as object.
+initial two index --> 0 and 1 are occupied by node and filename.js
+
+--------------------------------------------------------
+
+npm package
+-----------
+create a folder --> mkdir filename
+i.e., mkdir npm
+
+cd npm
+
+now in the npm folder I want to use it as a npm package
+
+npm init ---> to make the folder as a npm package
+
+package.json file will be created, it will contain the npm package configurations and details.
+
+npm install express
+npm i superagent
+
+after installing the express and superagent package in npm folder(package), the dependency in the package.json file will be updated.
+
+Now, npm is a custom package created by us,
+npm install 
+command could now install both express and superagent
+
+//both install and i works the same --> it helps in install the package.
+
+//to use a package
+const express = require('express'); --> to use a package installed, 
+                                        to use express package we have to first ask(require) and have to store in a const variable.
+ 
+

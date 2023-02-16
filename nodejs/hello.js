@@ -9,6 +9,7 @@
 // data = [10,true,"kishroe",{name:"pradeepa", roll:139}]
 // for(let it=0; it<data.length; it++)
 //     console.log(data[it]);
+
 function returnSome(num1,num2){
     console.log(num1+num2)
 }
