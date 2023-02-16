@@ -76,3 +76,29 @@ console.log(arr1) //to print the array
  
 arr.push("kishore") //to add element into array 
 
+
+
+If - else clause
+-----------------
+
+let age = '18'
+
+if (age==18){
+    console.log("Not eligible")
+}else{
+    console.log("Eligible")
+}
+
+
+== -------> check the values of the operand.
+=== ------> check the types of the operands.
+
+
+for loop
+--------
+data = [10,true,"kishroe",{name:"pradeepa", roll:139}]
+for(let it=0; it<data.length; it++)
+    console.log(data[it]);
+
+
+    
