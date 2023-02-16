@@ -1,0 +1,78 @@
+Introduction
+------------
+to print a message in console,
+    console.log("Learning Node")
+
+let is a keyword used to declare variables. 
+    let a = 10;
+
+redeclaration of a variable is prohibited - syntax error : Identifier 'a' has already been declared
+    let a = 18;
+
+we can reassign values in variables declared by let, unlike const which the reassignment is also prohibited.
+
+var is a keyword used to declare variables.
+    var a = 30;
+    var a = 40;
+
+var allows multiple redeclaration.
+
+const is also a keyword to assign variables as constant
+    const b = 10;
+    b+=1 ------> not allowed
+
+
+Datatype
+--------
+let a = 10;
+let b = "Kishore";
+let c;
+let d = true;
+
+console.log(typeof a) //number ----> 64bit (8 byte)
+console.log(typeof b) //string
+console.log(typeof c) //undefined 
+console.log(typeof d) //boolean 
+
+
+Object
+------
+let user = {
+    fname : "Kishore",
+    lname: "Ananth",
+    age: 20,
+    DOB: "18-02-2002"
+}
+console.log(user) //{ fname: 'Kishore', lname: 'Ananth', age: 20, DOB: '18-02-2002' }
+console.log(user.fname) //Kishore
+
+
+Function
+--------
+//No arg function
+function getName(){
+    console.log("Hey Google");
+}
+getName()
+
+//single argument function
+function getName(fname){
+    return fname;
+}
+
+let result = getName(user.fname)
+console.log(result)
+
+Array
+-----
+let arr = [10,20,30,40,50]
+console.log(arr)
+
+heterogenous array in JS - like python
+
+let arr1 = [10,20,"Kishore",40,true,{phone:1234567,email:"kishore@gmail.com"}]
+console.log(arr1[1]) //indexing starts from 0
+console.log(arr1) //to print the array
+ 
+arr.push("kishore") //to add element into array 
+

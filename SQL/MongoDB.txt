@@ -1,0 +1,36 @@
+--Database
+
+db - to see the database in use
+show dbs - to display all the db's
+use ('db_name') - to use the db or to create the db
+
+database is not created unless contents are available
+
+
+
+--Collection
+
+db.createCollection('collection_name')
+db.collection_name({
+	name:"Kishore",
+	roll_no:156
+})
+
+
+--to find/access
+
+1. db.democollection.find() - left empty it will return all the documents in the collection.
+2. db.democollection.findOne() - left empty it will return the first document in the collection.
+3. db.democollection.find({hobby:"listening to music"}) - querying/filtering 
+4. db.democollection.find({hobby:"listening to music"},{name:1}) - second parameter is projection, it will only display the mentioned content of the document.
+	- We use a 1 to include a field and 0 to exclude a field.
+	- You cannot use both 0 and 1 in the same object. The only exception is the _id field. You should either specify the fields you would like to include or the fields you would like to exclude.
+5. db.democollection.find({},{name:0,hobby:1}) -- X : cannot use both 0 and 1 in same object.
+6. db.democollection.find({},{_id:0,hobby:1}) -- It works: _id is the only exception
+
+
+--update
+
+db.democollection.updateOne({name:"Pradeepa"},{$set:{hobby:"gaming"}})
+
+
